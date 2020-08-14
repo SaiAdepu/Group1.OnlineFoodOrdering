@@ -6,7 +6,7 @@ namespace Znalytics.Group1.OnlineFoodOrdering
     {
         static void Main()
         {
-            System.Console.WriteLine("Hello");
+            System.Console.WriteLine("hii");
 
         }
     }
