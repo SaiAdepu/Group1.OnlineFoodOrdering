@@ -49,5 +49,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Znalytics.Grp1.OlineFoodOrder.Entities\Znalytics.Grp1.OlineFoodOrder.Entities.csproj">
+      <Project>{d20a9e37-fe8e-4e3e-9d37-e89f8b74831c}</Project>
+      <Name>Znalytics.Grp1.OlineFoodOrder.Entities</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
