@@ -45,6 +45,18 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Presentationlayer\Presentationlayer.csproj">
+      <Project>{9232e646-8a43-4f91-ba0b-f5a2308697a0}</Project>
+      <Name>Presentationlayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Znalytics.Group1.OnlineFoodOrdering.FoodDetails.BusinessLogi\Znalytics.Group1.OnlineFoodOrdering.FoodDetails.BusinessLogi.csproj">
+      <Project>{083f12f2-1516-497b-a2c5-c8486d3bc69b}</Project>
+      <Name>Znalytics.Group1.OnlineFoodOrdering.FoodDetails.BusinessLogi</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Znalytics.Group1.OnlineFoodOrdering\Znalytics.Group1.OnlineFoodOrdering.csproj">
+      <Project>{52626238-c55f-4965-a87d-db830f966795}</Project>
+      <Name>Znalytics.Group1.OnlineFoodOrdering</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Znalytics.Grp1.OlineFoodOrder.Entities\Znalytics.Grp1.OlineFoodOrder.Entities.csproj">
       <Project>{d20a9e37-fe8e-4e3e-9d37-e89f8b74831c}</Project>
       <Name>Znalytics.Grp1.OlineFoodOrder.Entities</Name>
