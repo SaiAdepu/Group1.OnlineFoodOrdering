@@ -4,65 +4,117 @@
 public class Employeelogin
 {
     private int _employeeID;
-    private string _password;
     private string _employeeName;
+    private string _password;
+
     private long _mobileNumber;
     private string _foodStoreID;
     /// <summary>
     /// employeeID details
     /// </summary>
-    public void SetEmployeeID(int value)
+    public int EmployeeID
     {
-        _employeeID = value;
+        set
+        {
+            if (value >= 10 )
+            {
+                _employeeID = value;
+            }
+            else
+            {
+                System.Console.WriteLine("enter valid data");
+            }
+        }
+        get
+        {
+            return _employeeID;
+        }
     }
-
-    public int GetEmployeeID()
+    
+    /// <summary>
+    /// EmployeeName details
+    /// </summary>
+    public string EmployeeName
     {
-        return _employeeID;
+        set
+        {
+            if (value.Length >= 10 && value.Length <= 40)
+            {
+                _employeeName = value;
+            }
+            else
+            {
+                System.Console.WriteLine("enter valid data");
+            }
+        }
+        get
+        {
+            return _employeeName;
+        }
     }
     /// <summary>
     /// Password details 
     /// </summary>
-    public void SetPassword(string value)
+    public string Password
     {
-        _password = value;
-    }
-    public string GetPassword()
-    {
-        return _password;
-    }
-    /// <summary>
-    /// EmployeeName details
-    /// </summary>
-    public void SetEmployeeName(string value)
-    {
-        _employeeName = value;
-    }
-    public string GetEmployeeName()
-    {
-        return _employeeName;
+        set
+        {
+            if (value.Length >= 8 && value.Length <= 30)
+            {
+                _password = value;
+            }
+            else
+            {
+                System.Console.WriteLine("enter valid data");
+            }
+        }
+    
+        get
+        {
+            return _password;
+        }
     }
     /// <summary>
     /// Mobilenumber details
     /// </summary>
-    public void SetMobileNumber(long value)
+    public long MobileNumber
     {
-        _mobileNumber = value;
+        set
+        {
+            if (value <= 10)
+            {
+                _mobileNumber = value;
+            }
+            else
+            {
+                System.Console.WriteLine("enter valid data");
+            }
     }
-    public long GetMobileNumber()
-    {
-        return _mobileNumber;
+        get
+        {
+            return _mobileNumber;
+        }
     }
     /// <summary>
     /// FoodStorageid Details
     /// </summary>
-    public void SetFoodStoreID(string value)
+    public string FoodStoreID
     {
-        _foodStoreID = value;
-    }
-    public string GetFoodStoreID()
-    {
-        return _foodStoreID;
+        set
+        {
+            if (value.Length <= 20)
+            {
+                _foodStoreID = value;
+            }
+            else
+            {
+                System.Console.WriteLine("enter valid data");
+            }
+        }
+        get
+        {
+            return _foodStoreID;
+        }
     }
 }
 
