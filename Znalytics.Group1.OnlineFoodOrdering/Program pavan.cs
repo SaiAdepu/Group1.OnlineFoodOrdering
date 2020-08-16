@@ -1,4 +1,4 @@
-﻿class Program10
+﻿class Program11
 {
     static void Main()
     {
@@ -37,5 +37,3 @@
         System.Console.WriteLine(f.FoodStoreID);
     }
 }
-
-

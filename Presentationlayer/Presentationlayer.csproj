@@ -44,18 +44,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
-    <Compile Include="Classemployeelogin.cs" />
-    <Compile Include="Programemployeelogin.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Znalytics.Group1.OnlineFoodOrdering\Znalytics.Group1.OnlineFoodOrdering.csproj">
-      <Project>{52626238-c55f-4965-a87d-db830f966795}</Project>
-      <Name>Znalytics.Group1.OnlineFoodOrdering</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
