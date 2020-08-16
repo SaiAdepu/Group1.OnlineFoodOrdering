@@ -4,9 +4,10 @@
 public class Employeelogin
 {
     private int _employeeID;
-    private string _employeeName;
+    private string _firstName;
+    private string _lastName;
     private string _password;
-
+    private string _confirmPassword;
     private long _mobileNumber;
     private string _foodStoreID;
     /// <summary>
@@ -16,7 +17,7 @@ public class Employeelogin
     {
         set
         {
-            if (value >= 10 )
+            if (value >= 10)
             {
                 _employeeID = value;
             }
@@ -30,17 +31,18 @@ public class Employeelogin
             return _employeeID;
         }
     }
-    
+
     /// <summary>
     /// EmployeeName details
     /// </summary>
-    public string EmployeeName
+    /// first name
+    public string FirstName
     {
         set
         {
             if (value.Length >= 10 && value.Length <= 40)
             {
-                _employeeName = value;
+                _firstName = value;
             }
             else
             {
@@ -49,7 +51,28 @@ public class Employeelogin
         }
         get
         {
-            return _employeeName;
+            return _firstName;
+        }
+    }
+    /// <summary>
+    /// lastname details
+    /// </summary>
+    public string LastName
+    {
+        set
+        {
+            if (value.Length >= 10 && value.Length <= 40)
+            {
+                _lastName = value;
+            }
+            else
+            {
+                System.Console.WriteLine("enter valid data");
+            }
+        }
+        get
+        {
+            return _lastName;
         }
     }
     /// <summary>
@@ -68,12 +91,36 @@ public class Employeelogin
                 System.Console.WriteLine("enter valid data");
             }
         }
-    
+
         get
         {
             return _password;
         }
     }
+    /// <summary>
+    /// Confirm password
+    /// </summary>
+    public string ConfirmPassword
+    {
+        set
+        {
+            if (value.Length >= 8 && value.Length <= 30)
+            {
+                _confirmPassword = value;
+            }
+            else
+            {
+                System.Console.WriteLine("enter valid data");
+            }
+        }
+
+        get
+        {
+            return
+                _confirmPassword;
+        }
+    }
+
     /// <summary>
     /// Mobilenumber details
     /// </summary>
@@ -89,7 +136,7 @@ public class Employeelogin
             {
                 System.Console.WriteLine("enter valid data");
             }
-    }
+        }
         get
         {
             return _mobileNumber;
@@ -117,4 +164,3 @@ public class Employeelogin
         }
     }
 }
-
