@@ -41,7 +41,7 @@ public class Employeelogin
     {
         set
         {
-            if (value.Length >= 10 && value.Length <= 40)
+            if (value.Length >= 4 && value.Length <= 20)
             {
                 _firstName = value;
             }
@@ -62,7 +62,7 @@ public class Employeelogin
     {
         set
         {
-            if (value.Length >= 10 && value.Length <= 40)
+            if (value.Length >=4 && value.Length <= 20)
             {
                 _lastName = value;
             }
