@@ -24,9 +24,9 @@
         f.Password = (System.Console.ReadLine());
         System.Console.WriteLine(f.Password);
 
-        System.Console.WriteLine("enter the ConfirmPassword");
+      
         f.ConfirmPassword = (System.Console.ReadLine());
-        System.Console.WriteLine(f.ConfirmPassword);
+        System.Console.WriteLine("enter the ConfirmPassword" +f.ConfirmPassword); ;
 
         System.Console.WriteLine("enter the MobileNumber");
         f.MobileNumber = (System.Convert.ToInt64(System.Console.ReadLine()));
