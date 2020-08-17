@@ -18,7 +18,7 @@ public class Employeelogin
     {
         set
         {
-            if (value >= 10)
+            if (value >=4)
             {
                 _employeeID = value;
             }
@@ -43,7 +43,7 @@ public class Employeelogin
         {
             if (value.Length >= 4 && value.Length <= 20)
             {
-                _firstName = value;
+               _firstName = value;
             }
             else
             {
@@ -129,7 +129,7 @@ public class Employeelogin
     {
         set
         {
-            if (value <= 10)
+            if (value <= 11)
             {
                 _mobileNumber = value;
             }
@@ -152,7 +152,7 @@ public class Employeelogin
         {
             if (value.Length <= 20)
             {
-                _foodStoreID = value;
+               _foodStoreID = value;
             }
             else
             {
